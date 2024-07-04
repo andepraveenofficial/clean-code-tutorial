@@ -10,8 +10,9 @@
     - [typescript-eslint/parser](https://www.npmjs.com/package/@typescript-eslint/parser)
         - An ESLint parser which leverages TypeScript ESTree to allow for ESLint to lint TypeScript source code.
         - `npm install --save-dev @typescript-eslint/parser`
+        -   if errors raise when you install `@typescript-eslint/parser` adjust `eslint` version `npm install --save-dev eslint@^8.56.0`
     - [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb) 
-    - if errors raise when you install `@typescript-eslint/parser` adjust `eslint` version `npm install --save-dev eslint@^8.56.0`
+    
         - This package provides Airbnb's .eslintrc as an extensible shared config.
         - `npm install --save-dev eslint-config-airbnb`
     - [@typescript-eslint/eslint-plugin](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin)
@@ -222,7 +223,7 @@
     ```
 
 - Step 4 - Add action script in `package.json`
-    - To run prettier `"pretty": "prettier --write 'src/**/*.ts'"`
+    - To run prettier `"pretty": "prettier --write src/**/*.ts"`
 
 ### 3. Husky
 
@@ -266,3 +267,7 @@
         ```
         
 <hr/>
+
+### Check Versions
+`npm list prettier eslint eslint-plugin-prettier eslint-config-prettier @typescript-eslint/parser @typescript-eslint/eslint-plugin
+`
