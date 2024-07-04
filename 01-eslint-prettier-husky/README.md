@@ -10,7 +10,8 @@
     - [typescript-eslint/parser](https://www.npmjs.com/package/@typescript-eslint/parser)
         - An ESLint parser which leverages TypeScript ESTree to allow for ESLint to lint TypeScript source code.
         - `npm install --save-dev @typescript-eslint/parser`
-    - [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb)
+    - [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb) 
+    - if errors raise when you install `@typescript-eslint/parser` adjust `eslint` version `npm install --save-dev eslint@^8.56.0`
         - This package provides Airbnb's .eslintrc as an extensible shared config.
         - `npm install --save-dev eslint-config-airbnb`
     - [@typescript-eslint/eslint-plugin](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin)
@@ -265,5 +266,3 @@
         ```
         
 <hr/>
-
-# Please connect with me on Twitter [@shindesan2012](https://twitter.com/shindesan2012)
