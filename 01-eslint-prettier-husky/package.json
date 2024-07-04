@@ -1,0 +1,22 @@
+{
+  "name": "03-express-typescript",
+  "version": "1.0.0",
+  "description": "* Install NodeJS\r * create `index.js`\r * Write some code in `index.js`\r * Start the Application : `node index.js`",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./dist/index.js",
+    "dev": "nodemon ./dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.9",
+    "nodemon": "^3.1.4",
+    "typescript": "^5.5.3"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
