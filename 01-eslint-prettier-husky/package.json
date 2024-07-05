@@ -13,6 +13,17 @@
     "precommit": "npm run lint-fix && npm run pretty",
     "prepush": "npm run lint"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
