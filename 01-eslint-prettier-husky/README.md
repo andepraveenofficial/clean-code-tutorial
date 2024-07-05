@@ -119,36 +119,36 @@
     - create `.prettierrc` file in root directory and add below configuration in it
 
     ```
+
+{
+    "bracketSpacing": true,
+    "printWidth": 80,
+    "proseWrap": "preserve",
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "all",
+    "tabWidth": 4,
+    "useTabs": true,
+    "arrowParens": "always",
+    "endOfLine": "lf",
+    "overrides": [
         {
-            "bracketSpacing": true,
-            "printWidth": 80,
-            "proseWrap": "preserve",
-            "semi": true,
-            "singleQuote": true,
-            "trailingComma": "all",
-            "tabWidth": 4,
-            "useTabs": true,
-            "parser": "typescript",
-            "arrowParens": "always",
-            "requirePragma": true,
-            "insertPragma": true,
-            "endOfLine": "lf",
-            "overrides": [
-                {
-                    "files": "*.json",
-                    "options": {
-                        "singleQuote": false
-                    }
-                },
-                {
-                    "files": ".*rc",
-                    "options": {
-                        "singleQuote": false,
-                        "parser": "json"
-                    }
-                }
-            ]
+            "files": "*.json",
+            "options": {
+                "singleQuote": false
+            }
+        },
+        {
+            "files": ".*rc",
+            "options": {
+                "singleQuote": false,
+                "parser": "json"
+            }
         }
+    ]
+}
+
+
     ```
 
     - Add `"prettier"` to the `"extends"` array in your `.eslintrc.*` file. Make sure to put it last, so it gets the chance to override other configs.
@@ -224,6 +224,7 @@
 
 - Step 4 - Add action script in `package.json`
     - To run prettier `"pretty": "prettier --write src/**/*.ts"`
+    - Run the Prettier - `npm run pretty`
 
 ### 3. Husky
 
