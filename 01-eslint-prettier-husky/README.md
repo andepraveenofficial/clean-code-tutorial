@@ -239,8 +239,17 @@
     - Add the hooks action script `"precommit"` and `"prepush"` in `package.json`
     - `"precommit": "npm run lint-fix && npm run pretty"`
     - `"prepush": "npm run lint"`
+     
+     ```json
+     "scripts": {
+  "prepare": "husky install",
+  "precommit": "npm run lint-fix && npm run pretty",
+  "prepush": "npm run lint"
+   },
+```
 
 - Step 3 - Add the git hooks Actions
+    - `npm run prepare` This script should set up Husky and create the `.husky` folder with the necessary hook files.
     - Add the `pre-commit` in `.husky folder` and which is created after running `npm run prepare`
     - Add below script in `pre-commit file`
 
@@ -259,14 +268,10 @@
 
             npm run prepush
         ```
-    - Please execute the below command on terminal to hook get executable by default
-    - Because files are not executable by default; they must be set to be executable
 
-        ```
-            chmod ug+x .husky/*
-            chmod ug+x .git/hooks/*
-        ```
-        
+    - `git commit -m "Test commit"`
+    - `git push origin master`
+
 <hr/>
 
 ### Check Versions
