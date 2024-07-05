@@ -249,8 +249,8 @@
 ```
 
 - Step 3 - Add the git hooks Actions
-    - `npm run prepare` This script should set up Husky and create the `.husky` folder with the necessary hook files.
-    - Add the `pre-commit` in `.husky folder` and which is created after running `npm run prepare`
+    -  `npx husky-init` to create `.husky` folder
+    - Add the `pre-commit` in `.husky folder`.
     - Add below script in `pre-commit file`
 
         ```
@@ -259,7 +259,7 @@
 
             npm run precommit
         ```
-    - Add the `pre-push` in `.husky folder` and which is created after running `npm run prepare`
+    - Add the `pre-push` in `.husky folder`.
     - Add below script in `pre-push file`
 
         ```
