@@ -1,0 +1,12 @@
+#!/usr/bin/env sh
+.  "$(dirname -- "$0")/_/husky.sh"
+
+# Run formatter
+npm run format
+
+# Run linter
+npm run lint
+
+# Fix lint error
+npm run lint-fix
+

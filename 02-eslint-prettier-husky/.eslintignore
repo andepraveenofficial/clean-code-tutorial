@@ -1,0 +1,14 @@
+# Ignore node_modules
+node_modules/
+
+# Ignore build output directory
+dist/*
+build/*
+coverage/*
+
+# Ignore specific files
+src/vendor/**/*.js
+# src/Test.tsx
+
+# Ignore all test files
+**/*.test.js
